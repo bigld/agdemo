@@ -24,7 +24,6 @@ CLASS zcl_agdemos_class IMPLEMENTATION.
 
       out->write( |No Customizing found| ).
 
-
     ENDIF.
 
   ENDMETHOD.
