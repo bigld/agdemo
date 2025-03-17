@@ -15,13 +15,12 @@ CLASS zcl_agdemos_class IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-    SELECT FROM zagdemos_cust
+    SELECT FROM zi_agdemos_cust
            FIELDS *
            WHERE active = @abap_true
            INTO TABLE @DATA(customizings).
 
-    IF sy-subrc = 0.
-    ELSE.
+    IF sy-subrc <> 0.
       out->write( |No Customizing found| ).
     ENDIF.
 
