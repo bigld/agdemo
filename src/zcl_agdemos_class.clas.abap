@@ -21,7 +21,10 @@ CLASS zcl_agdemos_class IMPLEMENTATION.
            INTO TABLE @DATA(customizings).
 
     IF sy-subrc <> 0.
+
       out->write( |No Customizing found| ).
+
+
     ENDIF.
 
   ENDMETHOD.
